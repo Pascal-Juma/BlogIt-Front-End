@@ -1,7 +1,10 @@
 .markdown-helper > * {
     font-family: var(--primary-font);
     line-height: 1.1;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     color: var(--color-black);
     font-weight: 400;
+}
+.markdown-styles{
+    text-align: center;
 }

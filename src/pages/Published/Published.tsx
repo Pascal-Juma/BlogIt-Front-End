@@ -70,7 +70,7 @@ function Published() {
           marginInline: 5,
         }}
       >
-        <Card sx={{ p: 3, display: "flex", alignItems: "center", justifyContent: "center"}}>
+        <Card sx={{ p: 3, display: "flex", alignItems: "center", marginInline: 8, justifyContent: "center"}}>
         <div className="markdown-helper">
           <Typography  variant="h1" color="var(--color-red)" sx={{fontSize: 30, fontWeight: 400}} gutterBottom >
             {data && data.title}
@@ -78,7 +78,9 @@ function Published() {
           <Typography variant="h4" sx={{fontSize: 28, fontWeight: 300, fontStyle: "italic"}} gutterBottom>
             {data && data.description}
           </Typography>
-          <ReactMarkDown>{data && data.content}</ReactMarkDown>
+          <div className="markdown-styles">
+          <ReactMarkDown >{data && data.content}</ReactMarkDown>
+          </div>
         </div>
         </Card>
       </Box>
