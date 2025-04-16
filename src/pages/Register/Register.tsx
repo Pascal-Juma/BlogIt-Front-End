@@ -35,7 +35,7 @@ const SignInCta = styled(Button)<ButtonProps>(() => ({
     }
   }));
 
-function SignUp() {
+function Register() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [emailAddress, setEmailAddress] = useState("");
@@ -184,4 +184,4 @@ function SignUp() {
   );
 }
 
-export default SignUp;
+export default Register;

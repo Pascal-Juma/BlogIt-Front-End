@@ -1,6 +1,6 @@
 import { Routes, Route} from "react-router-dom"
 import Home from "./pages/Home/Home"
-import SignUp from "./pages/SignUp/SignUp"
+import Register from "./pages/Register/Register"
 import SignIn from "./pages/SignIn/SignIn"
 import Compose from "./pages/Compose/Compose"
 import Published from "./pages/Published/Published"
@@ -14,7 +14,7 @@ function App() {
     <>
      <Routes>
       <Route path="" element={ <Home />} />
-      <Route path="/signup" element={ <SignUp />} />
+      <Route path="/register" element={ <Register />} />
       <Route path="/signin" element={ <SignIn />} />
       <Route path="/compose" element={ <Compose />} />
       <Route path="/published/:entryId" element={ <Published />} />

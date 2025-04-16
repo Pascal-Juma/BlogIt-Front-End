@@ -39,7 +39,7 @@ function Header() {
               <Navigation to={navLink.to}  label={navLink.label} />)
             }
             </ul>
-            <HeaderCta variant="contained"  component={Link} to='/signup' sx={{ textTransform:  'capitalize'}}>Get Started <FaLongArrowAltRight />
+            <HeaderCta variant="contained"  component={Link} to='/register' sx={{ textTransform:  'capitalize'}}>Get Started <FaLongArrowAltRight />
             </HeaderCta>
         </div>
       </nav>
