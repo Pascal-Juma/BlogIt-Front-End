@@ -78,7 +78,7 @@ function BlogCard({
         <Box sx={{ display: "flex", gap: 2 }}>
           <Button
             variant="contained"
-            startIcon={<Box sx={{ fontSize: "2.5rem"}}><LiaPenAltSolid /></Box>}
+            startIcon={<Box sx={{ fontSize: "2.5rem", color: "var(--color-white)"}}><LiaPenAltSolid /></Box>}
             component={Link}
             to={`/refine/${id}`}
             sx={{ textTransform: "capitalize", p: 1, width: "10rem", fontSize: "1.8rem" }}
