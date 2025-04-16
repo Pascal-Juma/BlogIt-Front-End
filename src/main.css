@@ -15,7 +15,7 @@ html,body{
 }
 body {
   font-size: 1.6rem;
-  color: var(--color-grey-light);
+  background-color: var(--color-grey-light);
 }
 
 a {
