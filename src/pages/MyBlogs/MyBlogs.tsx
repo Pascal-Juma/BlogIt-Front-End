@@ -4,13 +4,14 @@ import axios from "axios";
 import { Box, Grid, Typography, CircularProgress } from "@mui/material";
 import Button, { ButtonProps} from '@mui/material/Button';
 import { styled }from '@mui/material/styles';
+import { Link } from "react-router-dom"
 import { blue } from '@mui/material/colors';
 import apiUrl from "../../utils/apiUrl";
 import NavBar from "../../components/NavBar/NavBar";
 import BlogCard from "../../components/BlogCard/BlogCard";
 
 
-const BlogsCta = styled(Button)<ButtonProps>(({ theme }) => ({
+const BlogsCta = styled(Button)<ButtonProps& { to: string }>(({ theme }) => ({
   fontSize: '1.5rem',
   fontFamily: 'var(--primary-font)',
   fontWeight: 400,
@@ -85,7 +86,7 @@ function Myblogs() {
             </Typography>
             <BlogsCta
               variant="contained"
-              component="a" href="/compose"
+              component={Link} to="/compose"
               sx={{ mt: 2 }}
             >
              {
