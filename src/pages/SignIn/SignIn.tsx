@@ -42,7 +42,7 @@ function SignIn() {
   const navigate = useNavigate();
 
   const { isPending, mutate } = useMutation({
-    mutationKey: ["register-user"],
+    mutationKey: ["login-user"],
     mutationFn: async () => {
       const response = await axios.post(`${apiUrl}/auth/signin`,
         {identifier, password}, {withCredentials: true}
