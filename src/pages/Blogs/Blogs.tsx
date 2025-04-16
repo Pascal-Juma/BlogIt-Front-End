@@ -1,6 +1,8 @@
 import { FaUserCircle } from "react-icons/fa";
 import { SlCalender } from "react-icons/sl";
 import NavBar from "../../components/NavBar/NavBar";
+import { Link } from "react-router-dom";
+import { IconButton } from "@mui/material";
 import Platter from "../../components/Platter/Platter";
 import workflow from "../../assets/workflow.jpg";
 import health from "../../assets/health.jpg";
@@ -21,7 +23,10 @@ function Blogs() {
             Welcome to Blogit where Stories are crafted
         </h2>
         <div className="account-icon">
-        <a href="/myprofile" ><FaUserCircle  /><p className="manage-profile">My Profile</p></a>
+        <IconButton component={Link} to="/myprofile">
+        <FaUserCircle  />
+        </IconButton>
+        <p className="manage-profile">My Profile</p>
         </div>
     </div>
       <section className="schedule-section">
