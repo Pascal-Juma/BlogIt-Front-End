@@ -70,7 +70,7 @@ function Published() {
           marginInline: 5,
         }}
       >
-        <Card >
+        <Card sx={{ p: 3, display: "flex", alignItems: "center", justifyContent: "center"}}>
         <div className="markdown-helper">
           <Typography  variant="h1" color="var(--color-red)" sx={{fontSize: 30, fontWeight: 400}} gutterBottom >
             {data && data.title}

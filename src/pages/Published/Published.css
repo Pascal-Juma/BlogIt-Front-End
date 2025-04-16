@@ -1,4 +1,7 @@
 .markdown-helper > * {
     font-family: var(--primary-font);
     line-height: 1.1;
+    font-size: 1.6rem;
+    color: var(--color-black);
+    font-weight: 400;
 }
