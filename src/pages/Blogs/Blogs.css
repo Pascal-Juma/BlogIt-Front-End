@@ -1,0 +1,42 @@
+.schedule-section{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    row-gap: 5rem;
+    margin-bottom: 5rem;
+}
+.account-welcome{
+    font-size: 3rem;
+    font-family: var(--secondary-font);
+    color: var(--color-black);
+    margin-bottom: 2rem;   
+    font-weight: 600; 
+    text-align: center;
+    margin-block: 2rem;
+}
+.account-icon{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5rem;
+    font-weight: 500;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.account-icon svg{
+    color: var(--color-black);
+    font-size: 3rem;
+    margin-right: .5rem;
+}
+.manage-profile{
+    font-size: 2rem;
+    font-family: var(--tertiary-font);
+    color: var(--color-black);
+}
+@media screen and (max-width: 71.625em){
+    .schedule-section{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

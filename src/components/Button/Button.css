@@ -1,0 +1,13 @@
+.btn{
+    background-color: var(--color-red);
+    font-size: 1.8rem;
+    font-family: var(--primary-font);
+    padding: .6rem;
+}
+.btn:hover{
+    background-color: rgba(228, 31, 5, .8);
+}
+.btn svg:hover{
+    transform: translateX(.3rem);
+    transition: all .6s;
+}

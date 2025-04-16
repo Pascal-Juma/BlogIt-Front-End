@@ -1,0 +1,4 @@
+.markdown-helper > * {
+    font-family: var(--primary-font);
+    line-height: 1.1;
+}
