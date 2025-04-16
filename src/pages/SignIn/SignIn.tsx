@@ -13,6 +13,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import Header from "../../components/Header/Header";
 import apiUrl from "../../utils/apiUrl";
+import './SignIn.css'
 
 const SignUpCta = styled(Button)<ButtonProps>(({ theme }) => ({
   fontSize: '1.5rem',
@@ -70,7 +71,8 @@ function SignIn() {
 
   return (
     <>
-      <Header />
+    <section className="signin-section">
+    <Header />
       <Stack direction="row" justifyContent="center" alignItems="center" mt={4}>
         <Card
           component="form"
@@ -125,6 +127,7 @@ function SignIn() {
             </Typography>
         </Card>
       </Stack>
+    </section>
     </>
   );
 }
