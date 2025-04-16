@@ -70,6 +70,7 @@ function MyProfile() {
       },
       onError: (err) => {
         if (axios.isAxiosError(err)) {
+          console.log(err);
           const serverMessage = err.response?.data?.message || "An Error Occurred.";
           setValidity(serverMessage);
         } else {
