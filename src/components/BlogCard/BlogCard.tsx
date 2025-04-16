@@ -90,7 +90,7 @@ function BlogCard({
             color="error"
             onClick={handleDelete}
             disabled={isPending}
-            sx={{ textTransform: "capitalize", p: 1, width: "10rem", fontSize: "1.8rem"}}
+            sx={{ textTransform: "capitalize", p: 1, minWidth: "10rem", fontSize: "1.8rem"}}
             startIcon={<FaTrashAlt />}
           >
             {isPending ? "Deleting..." : "Delete"}
