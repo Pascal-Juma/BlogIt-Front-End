@@ -58,9 +58,7 @@ function MyProfile() {
             lastName,
             emailAddress,
             username,
-            oldpass,
-            newpass,
-            confirmed, },
+            password: newpass, },
           { withCredentials: true }
         );
         return response.data;
