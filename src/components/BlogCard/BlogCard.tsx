@@ -81,7 +81,7 @@ function BlogCard({
             startIcon={<LiaPenAltSolid />}
             component={Link}
             to={`/refine/${id}`}
-            sx={{ textTransform: "capitalize", p: 1.5 }}
+            sx={{ textTransform: "capitalize", p: 1.5, fontSize: "1.8rem" }}
           >
             Edit
           </Button>
@@ -90,17 +90,17 @@ function BlogCard({
             color="error"
             onClick={handleDelete}
             disabled={isPending}
-            sx={{ textTransform: "capitalize", p: 1.5 }}
+            sx={{ textTransform: "capitalize", p: 1.5, fontSize: "1.8rem"}}
             startIcon={<FaTrashAlt />}
           >
             {isPending ? "Please wait..." : "Delete"}
           </Button>
         </Box>
         <Box sx={{ display: "flex" }}>
-          <IconButton component={Link} to={`/published/${id}`}  sx={{ textTransform: "capitalize", p: 1.5 }}>
+          <IconButton component={Link} to={`/published/${id}`}  sx={{ textTransform: "capitalize", fontSize: "1.8rem" }}>
             <FaExternalLinkAlt />
           </IconButton>
-          <IconButton  sx={{ textTransform: "capitalize", p: 1.5 }}>
+          <IconButton  sx={{ textTransform: "capitalize",fontSize: "1.8rem"}}>
             {entryPinned ? <RiUnpinFill /> : <RiPushpinFill />}
           </IconButton>
         </Box>
