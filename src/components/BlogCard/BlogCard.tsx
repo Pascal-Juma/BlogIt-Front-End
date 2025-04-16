@@ -81,7 +81,7 @@ function BlogCard({
             startIcon={<LiaPenAltSolid />}
             component={Link}
             to={`/refine/${id}`}
-            sx={{ textTransform: "capitalize", p: 1.5, width: "14rem", fontSize: "1.8rem" }}
+            sx={{ textTransform: "capitalize", p: 1, width: "10rem", fontSize: "1.8rem" }}
           >
             Edit
           </Button>
@@ -90,7 +90,7 @@ function BlogCard({
             color="error"
             onClick={handleDelete}
             disabled={isPending}
-            sx={{ textTransform: "capitalize", p: 1.5, fontSize: "1.8rem"}}
+            sx={{ textTransform: "capitalize", p: 1, width: "10rem", fontSize: "1.8rem"}}
             startIcon={<FaTrashAlt />}
           >
             {isPending ? "Please wait..." : "Delete"}

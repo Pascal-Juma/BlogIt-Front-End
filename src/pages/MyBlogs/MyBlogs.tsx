@@ -94,7 +94,7 @@ function Myblogs() {
             </BlogsCta>
           </Box>
         )}
-        <Grid container alignItems="center" direction="column" mt={8} >
+        <Grid container alignItems="center" direction="column" mt={8} mb={5}  >
             {
                 data && 
                 data.map((item) =>
