@@ -1,8 +1,6 @@
 import { FaUserCircle } from "react-icons/fa";
 import { SlCalender } from "react-icons/sl";
 import NavBar from "../../components/NavBar/NavBar";
-import { Link } from "react-router-dom";
-import { IconButton } from "@mui/material";
 import Platter from "../../components/Platter/Platter";
 import workflow from "../../assets/workflow.jpg";
 import health from "../../assets/health.jpg";
