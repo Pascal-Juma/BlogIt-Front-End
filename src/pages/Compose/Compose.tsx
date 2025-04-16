@@ -11,7 +11,8 @@ import Alert from "@mui/material/Alert";
 import { useMutation } from "@tanstack/react-query";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import NavBar from '../../components/NavBar/NavBar'
+import NavBar from '../../components/NavBar/NavBar';
+import apiUrl from "../../utils/apiUrl";
 
 const ComposeCta = styled(Button)<ButtonProps>(({ theme }) => ({
   fontSize: "1.5rem",
@@ -34,7 +35,7 @@ function Compose() {
     mutationKey: ["compose-blog"],
     mutationFn: async () => {
       const response = await axios.post(
-        `http://localhost:4000/entries`,
+        `${apiUrl}/entries`,
         { title, description, content },
         { withCredentials: true }
       );
