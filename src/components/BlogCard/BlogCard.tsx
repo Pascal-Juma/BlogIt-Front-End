@@ -21,7 +21,6 @@ type cardProps = {
   description: string;
   id: string;
   entryPinned: boolean;
-  createdAt?: string;
 };
 
 function BlogCard({
@@ -29,7 +28,6 @@ function BlogCard({
   description,
   id,
   entryPinned,
-  createdAt,
 }: cardProps) {
   const queryClient = useQueryClient();
   const [validity, setValidity] = useState<string | null>(null);
