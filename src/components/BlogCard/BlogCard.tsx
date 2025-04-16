@@ -93,7 +93,7 @@ function BlogCard({
             sx={{ textTransform: "capitalize", p: 1, width: "10rem", fontSize: "1.8rem"}}
             startIcon={<FaTrashAlt />}
           >
-            {isPending ? "Please wait..." : "Delete"}
+            {isPending ? "Deleting..." : "Delete"}
           </Button>
         </Box>
         <Box sx={{ display: "flex" }}>
