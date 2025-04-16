@@ -3,7 +3,7 @@ import { useQuery } from "@tanstack/react-query";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import ReactMarkDown from "react-markdown";
-import { Box, Typography, CircularProgress } from "@mui/material";
+import { Box, Typography, CircularProgress, Card } from "@mui/material";
 import apiUrl from "../../utils/apiUrl";
 import NavBar from "../../components/NavBar/NavBar";
 import "./Published.css";
@@ -70,6 +70,7 @@ function Published() {
           marginInline: 5,
         }}
       >
+        <Card >
         <div className="markdown-helper">
           <Typography  variant="h1" color="var(--color-red)" sx={{fontSize: 30, fontWeight: 400}} gutterBottom >
             {data && data.title}
@@ -79,6 +80,7 @@ function Published() {
           </Typography>
           <ReactMarkDown>{data && data.content}</ReactMarkDown>
         </div>
+        </Card>
       </Box>
     </>
   );
