@@ -97,10 +97,10 @@ function BlogCard({
           </Button>
         </Box>
         <Box sx={{ display: "flex" }}>
-          <IconButton component={Link} to={`/published/${id}`}  sx={{ textTransform: "capitalize", fontSize: "1.8rem" }}>
+          <IconButton component={Link} to={`/published/${id}`}  sx={{ textTransform: "capitalize", fontSize: "2.3rem" }}>
             <FaExternalLinkAlt />
           </IconButton>
-          <IconButton  sx={{ textTransform: "capitalize",fontSize: "1.8rem"}}>
+          <IconButton  sx={{ textTransform: "capitalize",fontSize: "2.3rem"}}>
             {entryPinned ? <RiUnpinFill /> : <RiPushpinFill />}
           </IconButton>
         </Box>
