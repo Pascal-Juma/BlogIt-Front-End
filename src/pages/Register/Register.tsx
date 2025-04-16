@@ -13,6 +13,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import Header from "../../components/Header/Header";
 import apiUrl from "../../utils/apiUrl";
+import './Register.css'
 
 const SignUpCta = styled(Button)<ButtonProps>(({ theme }) => ({
   fontSize: '1.5rem',
@@ -77,7 +78,8 @@ function Register() {
   }
   return (
     <>
-      <Header />
+    <section className="register-section">
+    <Header />
       <Stack direction="row" justifyContent="center" alignItems="center" mt={2}>
         <Card
           component="form"
@@ -180,6 +182,7 @@ function Register() {
             </Typography>
         </Card>
       </Stack>
+    </section>
     </>
   );
 }
