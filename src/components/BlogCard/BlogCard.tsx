@@ -59,10 +59,12 @@ function BlogCard({
   return (
     <Card sx={{ mt: 3, width: "100%", p: 2 }}>
       <Typography
-        variant="h4"
+        variant="h2"
         textTransform="capitalize"
-        fontWeight="bold"
+        fontWeight="400"
         gutterBottom
+        fontSize="2.4rem"
+        fontFamily="var(--secondary-font)"
       >
         {validity && (
           <Alert severity="error" sx={{ mb: 1, fontSize: "1.3rem" }}>
@@ -71,7 +73,7 @@ function BlogCard({
         )}
         {title}
       </Typography>
-      <Typography variant="body1">{description}</Typography>
+      <Typography variant="body1" fontSize="1.8rem" fontWeight="400" fontFamily="var(--tertiary-font)">{description}</Typography>
       <CardActions sx={{ display: "flex", justifyContent: "space-between" }}>
         <Box sx={{ display: "flex", gap: 2 }}>
           <Button
@@ -79,6 +81,7 @@ function BlogCard({
             startIcon={<LiaPenAltSolid />}
             component={Link}
             to={`/refine/${id}`}
+            sx={{ textTransform: "capitalize", p: 1.5 }}
           >
             Edit
           </Button>
@@ -87,16 +90,17 @@ function BlogCard({
             color="error"
             onClick={handleDelete}
             disabled={isPending}
+            sx={{ textTransform: "capitalize", p: 1.5 }}
             startIcon={<FaTrashAlt />}
           >
             {isPending ? "Please wait..." : "Delete"}
           </Button>
         </Box>
         <Box sx={{ display: "flex" }}>
-          <IconButton component={Link} to={`/published/${id}`}>
+          <IconButton component={Link} to={`/published/${id}`}  sx={{ textTransform: "capitalize", p: 1.5 }}>
             <FaExternalLinkAlt />
           </IconButton>
-          <IconButton>
+          <IconButton  sx={{ textTransform: "capitalize", p: 1.5 }}>
             {entryPinned ? <RiUnpinFill /> : <RiPushpinFill />}
           </IconButton>
         </Box>
