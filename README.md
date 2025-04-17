@@ -1,5 +1,6 @@
 <h1 align="center">WElCOME TO BLOGIT</h1> 
-![project-preview](src/assests/preview.png)
+![project-preview](src/assets/preview.png)
+
 # 🚀 Getting Started
 Welcome to the BlogIt Frontend — a sleek, full-stack blogging platform interface built with ReactJS and Material UI.
 
